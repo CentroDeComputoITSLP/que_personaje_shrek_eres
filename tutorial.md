@@ -118,7 +118,7 @@ Crearemos un nuevo directorio en la raíz de nuestro proyecto llamada ```public`
 Se deberá crear un archivo nuevo el cual nombraremos ```index.html``` dentro de la carpeta ```public```.<br>
 Dentro del archivo creado escribiremos la estructura básica de un html.
 
-![referencia_html](./images/memes/html.jpg)
+![referencia_html](./Images/memes/html.jpg)
 
 Estructura basica HTML:
 <h4>index.html</h4>
@@ -146,7 +146,7 @@ Usaremos la siguiente instrucción para encender el servidor web
 node server.js
 ```
 
-![referencia_html](./images/memes/hack_html.PNG)
+![referencia_html](./Images/memes/hack_html.PNG)
 
 
 
