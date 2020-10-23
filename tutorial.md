@@ -333,7 +333,12 @@ function gotResults(error, results) {
     classifyVideo();
 }
 ```
-### 8. ¡Usar app!
+### 8. ¡Usar app! 
+<br>
+
+![celebracion](./Images/memes/celebration.gif)
+
+
 
 
 
