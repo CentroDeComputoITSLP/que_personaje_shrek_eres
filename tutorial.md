@@ -148,6 +148,103 @@ node server.js
 
 ![referencia_html](./Images/memes/hack_html.PNG)
 
+### 5. Agregar librería [p5.js](https://p5js.org/)
+![logo_p5](./Images/5.png)
+
+
+
+>¡p5.js es una biblioteca de JavaScript para la programación creativa, que busca hacer que programar sea accesible e inclusivo para artistas, diseñadores, educadores, principiantes y cualquier otra persona! p5.js es gratuito y de código abierto porque creemos que el software y las herramientas para aprenderlo deben ser accesibles para todos.
+
+5.1 Agregar el CDN o descargar la liberia <br> 
+Si de opta por usar el CDN solo deberá agregarse la siguiente importación dentro de el bloque ```<head></head>```.
+
+```
+<!--P5.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js" integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA==" crossorigin="anonymous"></script>
+<!--addons-P5.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js" integrity="sha512-wM+t5MzLiNHl2fwT5rWSXr2JMeymTtixiw2lWyVk1JK/jDM4RBSFoH4J8LjucwlDdY6Mu84Kj0gPXp7rLGaDyA==" crossorigin="anonymous"></script>
+
+```
+
+ de tal forma que nuestro ```index.html``` tendrá el siguiente aspecto
+
+
+
+
+<h4>public/index.js</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes de Shrek</title>
+    <!--P5.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js" integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA==" crossorigin="anonymous"></script>
+    <!--addons-P5.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js" integrity="sha512-wM+t5MzLiNHl2fwT5rWSXr2JMeymTtixiw2lWyVk1JK/jDM4RBSFoH4J8LjucwlDdY6Mu84Kj0gPXp7rLGaDyA==" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Hola mundo!</h1>
+</body>
+
+</html>
+
+```
+
+5.2 Configurar el uso de P5.js<br>
+Crearemos un nuevo archivo el cual llamaremos ```sketch.js``` dentro del directorio ```public```. este nuevo archivo tendrá la siguiente estructura:
+
+<h4>public/sketch.js</h4>
+
+```
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  if (mouseIsPressed) {
+    fill(0);
+  } else {
+    fill(255);
+  }
+  ellipse(mouseX, mouseY, 80, 80);
+}
+
+```
+> [Como empezar con P5.js](https://p5js.org/es/get-started/)
+
+Si visualizamos nuestra aplicación:
+
+*****aqui va imagen
+
+5.3 Hacer uso de la cámara<br>
+Para hacer uso de la cámara modificaremos el sketch.js:
+
+<h4>public/sketch.js</h4>
+
+```
+let video;
+function setup() {
+    createCanvas(400, 400);
+    //Video
+    video = createCapture(VIDEO);
+    video.hide();
+}
+
+function draw() {
+    //Renderizado de video
+    image(video, 0, 0);
+}
+
+
+```
+
+
+
 
 
 

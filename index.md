@@ -20,4 +20,4 @@ Para hacer seguir el tutorial desde cero sigue la siguiente [guia](https://centr
 - [¿Qué es el machine learning y el deep learning?](https://hardzone.es/tutoriales/rendimiento/diferencias-ia-deep-machine-learning/)
 - [Lectura IA](https://www.caminosmadrid.es/9938-2)
 - [Google duplex (Asistente que hace llamadas)](https://www.youtube.com/watch?v=l9BTMWOupGM)
-
+- [¿Que es un CDN?](https://developer.mozilla.org/es/docs/Glossary/CDN)
