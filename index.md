@@ -3,6 +3,7 @@
 Para hacer seguir el tutorial desde cero sigue la siguiente [guia](https://centrodecomputoitslp.github.io/que_personaje_shrek_eres/tutorial)
 
 
+
 ### Recursos
 
 - [Juguetes que usan Watson IBM](https://www.wired.com/2015/08/toy-dinosaur-uses-ibms-watson-brain/)
