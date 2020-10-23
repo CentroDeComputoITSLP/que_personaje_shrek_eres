@@ -146,7 +146,7 @@ Usaremos la siguiente instrucción para encender el servidor web
 node server.js
 ```
 
-![referencia_html](./images/memes/hack_html.png)
+![referencia_html](./images/memes/hack_html.PNG)
 
 
 
