@@ -70,14 +70,15 @@ Para instalar la liberia/dependencia existen diversas maneras a continuación se
 ```
 npm install express --save
 ```
-- opción 2: Modificando el archivo package.js .<br>
-Abriremos el archivo ```package.js``` para agregar la liberia/dependencia. 
-```
+- opción 2: Modificando el archivo package.js
+<br>
 
+Abriremos el archivo ```package.js``` para agregar la liberia/dependencia. 
+
+```
 "dependencies": {
     "express": "^4.17.1"
   }
-
 ```
 Después tendremos que usar NPM para descargar la librería
 ```
