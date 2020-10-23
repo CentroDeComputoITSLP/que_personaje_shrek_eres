@@ -247,19 +247,20 @@ function draw() {
 
 6.1 Ingresar al sitio de Teachable Machine: <br>[https://teachablemachine.withgoogle.com/](https://teachablemachine.withgoogle.com/)
 
-![sitio_teachable](./Images/6.png)
+![sitio_teachable](./Images/6.PNG)
 
 6.2 navegaremos a "Primeros pasos", una vez dentro seleccionaremos "Proyecto como imagen"
+![sitio_teachable](./Images/6_2.PNG)
+![sitio_teachable](./Images/6_1.png)
+![sitio_teachable](./Images/6_2.PNG)
 
-![sitio_teachable](./Images/6_2.png)
-![sitio_teachable](./Images/7_1.png)
-![sitio_teachable](./Images/7_2.png)
-![sitio_teachable](./Images/7_3.png)
-![sitio_teachable](./Images/7_4.png)
-![sitio_teachable](./Images/7_5.png)
-![sitio_teachable](./Images/7_6.png)
+![sitio_teachable](./Images/6_2_2.png)
+![sitio_teachable](./Images/6_3.png)
+![sitio_teachable](./Images/6_4.PNG)
+![sitio_teachable](./Images/6_5.PNG)
+![sitio_teachable](./Images/6_6.PNG)
 
-### 7.Instalar y configurar [ml5:](https://ml5js.org/)
+### 7. Agregar librería [ml5:](https://ml5js.org/)
 7.1 Para usar la liberia podemos descargarla o usar el CDN como lo indica en la [documentación](https://learn.ml5js.org/#/)
 
 Si de opta por usar el CDN solo deberá agregarse la siguiente importación dentro de el bloque ```<head></head>```.
@@ -268,8 +269,70 @@ Si de opta por usar el CDN solo deberá agregarse la siguiente importación dent
 <!--ml5.js-->
 <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
 ```
+7.2 Creación de un nuevo directorio dentro de la carpeta ```public``` el cual llamaremos ```models ```
+
+7.3 Dentro de la carpeta ```models ``` descomprimiremos los archivos generados por el modelo
+
+![descomprimir_modelo](./Images/7_3.PNG)
+
+7.4 Modificar el sketch.js<br>
+Se modificara el sketch.js de tal manera que quede de la siguiente manera:
+
+<h4>/public/sketch.js</h4>
+
+```
+let video;
+let classifier;
+let modelURL = './model/';
+let label = "Espere...";
+
+// Se carga el modelo
+function preload() {
+    classifier = ml5.imageClassifier(modelURL + 'model.json');
+}
+
+function setup() {
+    createCanvas(640, 520);
+    
+    video = createCapture(VIDEO);
+    video.hide();
+
+    //Se inicia la clasificación
+    classifyVideo();
+}
 
 
+function classifyVideo() {
+    classifier.classify(video, gotResults);
+}
+
+function draw() {
+    background(0);
+
+    //Renderizado del video
+    image(video, 0, 0);
+
+    //Dibuja la etiqueta resultante
+    textSize(32);
+    textAlign(CENTER, CENTER);
+    fill(255);
+    text(label, width / 2, height - 16);
+}
+
+
+// STEP 3: Get the classification!
+function gotResults(error, results) {
+    //Si ocurre un error
+    if (error) {
+        console.error(error);
+        return;
+    }
+    
+    label = results[0].label;
+    console.log(results[0].label);
+    classifyVideo();
+}
+```
 
 
 
