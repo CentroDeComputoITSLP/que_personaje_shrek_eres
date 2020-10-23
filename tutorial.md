@@ -252,8 +252,6 @@ function draw() {
 6.2 navegaremos a "Primeros pasos", una vez dentro seleccionaremos "Proyecto como imagen"
 ![sitio_teachable](./Images/6_2.PNG)
 ![sitio_teachable](./Images/6_1.png)
-![sitio_teachable](./Images/6_2.PNG)
-
 ![sitio_teachable](./Images/6_2_2.png)
 ![sitio_teachable](./Images/6_3.png)
 ![sitio_teachable](./Images/6_4.PNG)
