@@ -243,8 +243,31 @@ function draw() {
 
 ```
 
+### 6.Entrenar un modelo en [Teachable Machine:](https://teachablemachine.withgoogle.com/)
 
+6.1 Ingresar al sitio de Teachable Machine: <br>[https://teachablemachine.withgoogle.com/](https://teachablemachine.withgoogle.com/)
 
+![sitio_teachable](./Images/6.png)
+
+6.2 navegaremos a "Primeros pasos", una vez dentro seleccionaremos "Proyecto como imagen"
+
+![sitio_teachable](./Images/6_2.png)
+![sitio_teachable](./Images/7_1.png)
+![sitio_teachable](./Images/7_2.png)
+![sitio_teachable](./Images/7_3.png)
+![sitio_teachable](./Images/7_4.png)
+![sitio_teachable](./Images/7_5.png)
+![sitio_teachable](./Images/7_6.png)
+
+### 7.Instalar y configurar [ml5:](https://ml5js.org/)
+7.1 Para usar la liberia podemos descargarla o usar el CDN como lo indica en la [documentación](https://learn.ml5js.org/#/)
+
+Si de opta por usar el CDN solo deberá agregarse la siguiente importación dentro de el bloque ```<head></head>```.
+
+```
+<!--ml5.js-->
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+```
 
 
 
