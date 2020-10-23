@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Mi primera aplicación de reconi
 
 You can use the [editor on GitHub](https://github.com/CentroDeComputoITSLP/reconocimientoDeImagenes/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -8,30 +8,21 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### Recursos
 
-- Bulleted
-- List
+- [Juguetes que usan Watson IBM](https://www.wired.com/2015/08/toy-dinosaur-uses-ibms-watson-brain/)
+- [Memes generados con IA](https://imgflip.com/ai-meme)
+- [Bots en Microsoft Teams](https://www.suricatta.es/blog/los-mejores-bots-de-microsoft-teams-en-2019/)
+- [Bot maligno (TAY) Microsoft ](https://www.maxim.com/news/microsoft-ai-chatbot-begs-for-sex-2016-3)
+- [Sophie, primer robot en obtener ciudadanía](https://www.infobae.com/america/tecno/2017/10/27/sophia-el-primer-robot-en-obtener-una-ciudadania/)
+- [Proyecto Frida IBM](https://developer.ibm.com/es/technologies/artificial-intelligence/projects/frida/)
+- [El robot Frida](https://digitallpost.com.mx/destacado/video-frida-un-robot-sabelotodo/)
+- [Platica con Frida](https://www.facebook.com/ibm.mexico/videos/1283594165018159)
+- [Primer bot (Eliza ) conversacional de la historia]( https://www.xataka.com/historia-tecnologica/asi-era-eliza-el-primer-bot-conversacional-de-la-historia)
+- [charlar con eliza](http://deixilabs.com/)
+- [Machine learning for kids ](https://machinelearningforkids.co.uk/#!/about)
+- [¿Qué es el machine learning y el deep learning?](https://hardzone.es/tutoriales/rendimiento/diferencias-ia-deep-machine-learning/)
+- [Lectura IA](https://www.caminosmadrid.es/9938-2)
+- [Google duplex (Asistente que hace llamadas)](https://www.youtube.com/watch?v=l9BTMWOupGM)
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CentroDeComputoITSLP/reconocimientoDeImagenes/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
